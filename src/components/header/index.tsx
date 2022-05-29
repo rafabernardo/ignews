@@ -1,4 +1,6 @@
 import Image from 'next/image'
+import classnames from 'classnames'
+
 import styles from './styles.module.scss'
 
 const Header = () => {
