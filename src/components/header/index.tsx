@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import classnames from 'classnames'
 
+import SignInButton from '../sign-in-button'
 import styles from './styles.module.scss'
 
 const Header = () => {
@@ -12,6 +13,7 @@ const Header = () => {
           <a className={styles['nav-item']}>Home</a>
           <a className={styles['nav-item']}>Posts</a>
         </nav>
+        <SignInButton className={styles['sign-in-button']} />
       </div>
     </header>
   )

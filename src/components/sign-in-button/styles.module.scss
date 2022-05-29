@@ -1,0 +1,38 @@
+.button{
+  height: 3rem;
+  border-radius: 3rem;
+  background-color: var(--gray-850);
+  border: 0;
+  padding: 0 1.5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: var(--white);
+  font-weight: bold;
+
+  .icon{
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 1rem;
+    color: var(--yellow-500);
+
+    &.logged{
+      color: var(--green-500);
+    }
+  }
+
+  .close{
+    color: var(--gray-300);
+    margin-left: 1rem;
+    width: 1rem;
+    height: 1rem;
+  }
+
+  transition: filter 0.2s;
+
+  &:hover{
+    filter: brightness(0.8);
+  }
+}
