@@ -1,0 +1,39 @@
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  height: calc(100vh - 5rem);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .logo {
+    position: relative;
+  }
+
+  .content {
+    max-width: 60rem;
+
+    .text {
+      font-weight: 700;
+      font-size: 1.2rem;
+      color: var(--white);
+
+      span {
+        color: var(--cyan-500);
+      }
+    }
+
+    .title{
+      font-size: 4.5rem;
+      line-height: 4.5rem;
+      font-weight: 900;
+      margin: 2.5rem 0;
+
+      span {
+        color: var(--cyan-500);
+      }
+    }
+  }
+}
