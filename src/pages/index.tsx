@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 
 import girlCoding from '../../public/images/avatar.svg'
+import SubscriptionButton from '../components/subscription-button'
 import styles from './home.module.scss'
 
 export default function Home() {
@@ -21,6 +22,7 @@ export default function Home() {
             Get access to all publications <br />
             <span>for $9.90 month</span>
           </p>
+          <SubscriptionButton className={styles.button} />
         </section>
         <div className={styles.logo}>
           <Image src={girlCoding} alt='Girl coding' />
