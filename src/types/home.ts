@@ -1,0 +1,7 @@
+export interface HomeProps {
+  product: {
+    priceId: string
+    amount: number
+    interval: string
+  }
+}
