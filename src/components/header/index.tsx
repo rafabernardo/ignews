@@ -1,7 +1,8 @@
 import Image from 'next/image'
-import classnames from 'classnames'
+import { useRouter } from 'next/router'
 
 import SignInButton from '../sign-in-button'
+import { ActiveLink } from '../active-link'
 import styles from './styles.module.scss'
 
 const Header = () => {
@@ -10,8 +11,12 @@ const Header = () => {
       <div className={styles.content}>
         <Image src='/images/logo.svg' alt='logo' width={80} height={20} />
         <nav className={styles.nav}>
-          <a className={styles['nav-item']}>Home</a>
-          <a className={styles['nav-item']}>Posts</a>
+          <ActiveLink href={'/'} activeClassName={styles.active}>
+            <a className={styles['nav-item']}>Home</a>
+          </ActiveLink>
+          <ActiveLink href={'/posts'} prefetch activeClassName={styles.active}>
+            <a className={styles['nav-item']}>Posts</a>
+          </ActiveLink>
         </nav>
         <SignInButton className={styles['sign-in-button']} />
       </div>

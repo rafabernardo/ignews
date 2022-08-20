@@ -12,8 +12,8 @@
     align-items: center;
 
     .logo {
-      width:10rem;
-      height:3rem;
+      width: 10rem;
+      height: 3rem;
     }
 
     .nav {
@@ -36,26 +36,26 @@
         &:hover {
           color: var(--white);
         }
-
-        &.active{
-          color: var(--white);
-          font-weight: bold;
-        }
-
-        &.active::after {
-          content: '';
-          height: 0.3rem;
-          border-radius: 0.3rem 0.3rem 0 0;
-          width: 100%;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          background-color: var(--yellow-500);
-        }
       }
     }
 
-    .sign-in-button{
+    .active {
+      color: var(--white) !important;
+      font-weight: bold;
+
+      &::after {
+        content: '';
+        height: 0.3rem;
+        border-radius: 0.3rem 0.3rem 0 0;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        background-color: var(--yellow-500);
+      }
+    }
+
+    .sign-in-button {
       margin-left: auto;
     }
   }
