@@ -27,11 +27,9 @@ const Posts = ({ posts }: PostProps) => {
         <div className={styles.content}>
           {posts.map((post) => (
             <Link href={`posts/${post.slug}`} key={post.slug}>
-              <a>
                 <time>{post.updatedAt}</time>
                 <strong>{post.title}</strong>
                 {post.excerpt && <p>{post.excerpt}</p>}
-              </a>
             </Link>
           ))}
         </div>

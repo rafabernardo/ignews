@@ -1,34 +1,36 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# ignews
+
+ignews is a blog built using the Prismic content management system (CMS), Stripe for payments, Sass for styling, FaunaDB for database management and next-auth for authentication with Github. The project was created as part of the Rocketseat Ignite bootcamp.
+
+The project utilizes the Prismic API to fetch and display blog post data on the frontend. It also allows users to purchase premium content using Stripe. The styling of the project is done using Sass, and the database management is handled by FaunaDB. Users can also authenticate with their Github account.
 
 ## Getting Started
 
-First, run the development server:
+To run the project locally, you'll need to have Node.js and npm (or yarn) installed on your machine, the project counts with nvm to run Node version 16.15.0. You will also need to have an account with Stripe, Prismic, FaunaDB and Github. Once you have those, you can clone the repository and run the following commands from the project's root directory:
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+1. ```nvm use``` to use the specified version of node (opcional)
+2. ```bash npm run dev``` or ```bash yarn dev```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Create a .env file in the root directory and add the following environment variables:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+NEXT_PUBLIC_STRIPE_PUBLIC_KEY: public key for your stripe account
+STRIPE_SUBSCRIPTION_PRICE_ID: id of the subscription price
+NEXTAUTH_URL: url of application
+STRIPE_WEBHOOK_SECRET: secret for stripe webhook
+GITHUB_CLIENT_ID: client id for Github
+GITHUB_CLIENT_SECRET: client secret for Github
+FAUNA_DB_KEY: key for FaunaDB
+PRISMIC_ENDPOINT: endpoint for Prismic API
+PRISMIC_ACCESS_TOKEN: access token for Prismic API
+STRIPE_API_KEY: secret key for Stripe API
+JWT_SECRET: secret key for JWT
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
+3. ```bash npm run dev``` or ```bash yarn dev``` to start the development server
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+The project will be running at [http://localhost:3000](http://localhost:3000) and you can view the blog in the browser.
 
-## Learn More
+In order to use the auth functionality, you'll need to set up a Github App and use the appropriate keys in the .env file.
 
-To learn more about Next.js, take a look at the following resources:
+The project is built with React and also uses the Next.js framework for server-side rendering and Next-Auth for authentication. The project also uses SaSS for styling.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you have any questions or issues with the project, please feel free to open an issue on the GitHub repository.

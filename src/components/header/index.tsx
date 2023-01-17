@@ -12,10 +12,10 @@ const Header = () => {
         <Image src='/images/logo.svg' alt='logo' width={80} height={20} />
         <nav className={styles.nav}>
           <ActiveLink href={'/'} activeClassName={styles.active}>
-            <a className={styles['nav-item']}>Home</a>
+            <span className={styles['nav-item']}>Home</span>
           </ActiveLink>
-          <ActiveLink href={'/posts'} prefetch activeClassName={styles.active}>
-            <a className={styles['nav-item']}>Posts</a>
+          <ActiveLink href={'/posts'} activeClassName={styles.active}>
+            <span className={styles['nav-item']}>Posts</span>
           </ActiveLink>
         </nav>
         <SignInButton className={styles['sign-in-button']} />
