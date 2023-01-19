@@ -13,17 +13,17 @@ To run the project locally, you'll need to have Node.js and npm (or yarn) instal
 
 3. Create a .env file in the root directory and add the following environment variables:
 
-NEXT_PUBLIC_STRIPE_PUBLIC_KEY: public key for your stripe account
-STRIPE_SUBSCRIPTION_PRICE_ID: id of the subscription price
-NEXTAUTH_URL: url of application
-STRIPE_WEBHOOK_SECRET: secret for stripe webhook
-GITHUB_CLIENT_ID: client id for Github
-GITHUB_CLIENT_SECRET: client secret for Github
-FAUNA_DB_KEY: key for FaunaDB
-PRISMIC_ENDPOINT: endpoint for Prismic API
-PRISMIC_ACCESS_TOKEN: access token for Prismic API
-STRIPE_API_KEY: secret key for Stripe API
-JWT_SECRET: secret key for JWT
+- NEXT_PUBLIC_STRIPE_PUBLIC_KEY: public key for your stripe account
+- STRIPE_SUBSCRIPTION_PRICE_ID: id of the subscription price
+- NEXTAUTH_URL: url of application
+- STRIPE_WEBHOOK_SECRET: secret for stripe webhook
+- GITHUB_CLIENT_ID: client id for Github
+- GITHUB_CLIENT_SECRET: client secret for Github
+- FAUNA_DB_KEY: key for FaunaDB
+- PRISMIC_ENDPOINT: endpoint for Prismic API
+- PRISMIC_ACCESS_TOKEN: access token for Prismic API
+- STRIPE_API_KEY: secret key for Stripe API
+- JWT_SECRET: secret key for JWT
 
 3. ```bash npm run dev``` or ```bash yarn dev``` to start the development server
 
